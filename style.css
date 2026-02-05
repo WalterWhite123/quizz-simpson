@@ -1,93 +1,50 @@
 *{
     box-sizing: border-box;
-    margin:0;
-    background-color: purple;
-}
-
-.container{
-    
-    background-color: rgb(229, 226, 22);
-    width: 60vw;
-    height: 125vh;
-    margin: auto;
-}
-
-h1{
-    text-align: center;
-    background-color: rgb(229, 226, 22) ;
-    font-family:fantasy;
-    color: rgb(23, 66, 133);
-    font-weight: bold;
-    font-size:50px;
-}
-
-img,button{
-    display:block;
-    margin:auto;
+    margin:0px;
 }
 
 img{
-    margin-top: 60px;
-}
-button{
-    margin-top: 30px;
-    padding: 9px 50px;
-    color:white;
-    border-radius: 4px;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-#screen{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:700px;
-    height:80px;
+    display:block;
+    width : 900px;
     margin:auto;
-    margin-top:10px;
-    text-align:center;
-    background-color: white;
-    border:3px solid black;
-    border-radius:10px;
-    font-size:30px;
+    margin:40px auto;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    margin:auto;
-    margin-top: 20px;
-    gap:10px;
-    padding: 10px;
-    background-color: rgb(229, 226, 22);
-    
-}
-
-.answer{
-    font-size: 32px;
-    padding: 8px 90px;
-    border: 2px solid rgb(229, 226, 22);
-    width: 700px;
-    text-align: center;
-    background-color: white;
-    border-radius: 12px;
-    border:2px solid black;
-    cursor: pointer;
-    
-
-}
-
-.answer:hover{
-    background-color: purple;
-    color:white;
-}
-.row{
+#question, .reponse{
+    /*Flex*/
     display:flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
-    background-color: rgb(229, 226, 22);
+    /*Boite*/
+    width: 900px;
+    height: 50px;
+    margin:auto;
+    padding: 12px 0;
+    border: 2px solid black;
+    /*Texte*/
+    font-size: 30px;
+}
+
+#question{
+    margin-bottom: 12px;
+}
+
+.conteneur-reponse{
+    width:900px;
+    margin:auto;
+}
+
+
+.ligne{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.reponse{
+        width: 400px;
+        height: 60px;
+        border:2px solid rgb(8, 6, 6);
+        border-radius: 20px;
+        margin: 0;
 }
