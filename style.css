@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    background-color: purple;
+}
+
+.container{
+    
+    background-color: rgb(229, 226, 22);
+    width: 60vw;
+    height: 125vh;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(229, 226, 22) ;
+    font-family:fantasy;
+    color: rgb(23, 66, 133);
+    font-weight: bold;
+    font-size:50px;
+}
+
+img,button{
+    display:block;
+    margin:auto;
+}
+
+img{
+    margin-top: 60px;
+}
+button{
+    margin-top: 30px;
+    padding: 9px 50px;
+    color:white;
+    border-radius: 4px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
