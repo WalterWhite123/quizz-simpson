@@ -1,5 +1,8 @@
 
 //reference
+let carte = document.querySelector(".carte");
+let carte_fin = document.createElement("div");
+carte_fin.setAttribute("id","carte-fin");
 let suivantBtn = document.querySelector("#suivant");
 let image = document.querySelector("img");
 let question = document.querySelector("#question")
@@ -12,6 +15,7 @@ const liste_carte =
 [{src:"img/intro-simpson.webp",question:"Qui est le créateur des simpson ?",reponse:["Justin Roiland","Matt Groening","Seth MacFarlane","Dan Harmon"],bonne_reponse: "Matt Groening"},
 {src:"img/springfield.jpeg",question:"Comment s'appelle la ville des Simpson ?",reponse:["Springfield","Monaco","Los Santos","Spielberg"],bonne_reponse:"Springfield"},
 {src:"img/homer.jpeg",question:"Comment s'appelle le père de la famille ?",reponse:["Homer","Homère","Oh mère !","Moe-Mere"],bonne_reponse:"Homer"}
+
 ]
 
 //variable
@@ -36,12 +40,19 @@ window.addEventListener("load",(event)=>{
 suivantBtn.addEventListener("click",()=>{
 
 
+    if (carte_courante + 1 >= liste_carte.length){
+        document.body.removeChild(carte);
+        document.body.removeChild(suivantBtn);
+        carte_fin.textContent = `Score: \n${score}/${liste_carte.length}`;
+        document.body.appendChild(carte_fin);
 
-
-
+    }
+    
+    
     carte_courante++;
     //reinit touched
     touched = false;
+
 
 
     if (carte_courante >= liste_carte.length){
@@ -92,7 +103,7 @@ conteneur_reponse.addEventListener("click",(event)=>{
             }
         });
 
-        },1000);
+        },250);
 
 
         
