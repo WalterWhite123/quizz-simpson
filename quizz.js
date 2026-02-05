@@ -78,7 +78,7 @@ suivantBtn.addEventListener("click",()=>{
     reponse.forEach((element)=>{
         element.textContent = liste_carte[carte_courante].reponse[i++]
         // reinit couleur 
-        element.style.cssText = "background-color:white;color:black;"
+        element.style.cssText = "background-color:purple;color:white;"
     })
     i = 0;
 
@@ -96,7 +96,7 @@ conteneur_reponse.addEventListener("click",(event)=>{
 
     if (touched == false){
         if (event.target.textContent == liste_carte[carte_courante].bonne_reponse){
-        event.target.style.cssText = "background-color:green;color:white;"
+        event.target.style.cssText = "background-color:lightgreen;color:white;"
         score++;
         console.log(score);
     }else{
@@ -104,13 +104,13 @@ conteneur_reponse.addEventListener("click",(event)=>{
         
 
 
-            event.target.style.cssText = "background-color:red;color:white;"
+            event.target.style.cssText = "background-color:lightcoral;color:white;"
 
         setTimeout(()=>{
 
             reponse.forEach((element)=>{
             if (element.textContent == liste_carte[carte_courante].bonne_reponse ){
-                element.style.cssText = "background-color:blue;color:white";
+                element.style.cssText = "background-color:lightblue;color:white";
             }
         });
 
