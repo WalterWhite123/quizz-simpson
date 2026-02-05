@@ -9,6 +9,7 @@ let question = document.querySelector("#question")
 let conteneur_reponse = document.querySelector(".conteneur-reponse")
 let reponse = document.querySelectorAll(".reponse");
 let ligne = document.querySelector(".ligne");
+let titre = document.querySelector("h1");
 
 //liste
 const liste_carte = 
@@ -52,6 +53,7 @@ suivantBtn.addEventListener("click",()=>{
 
 
     if (carte_courante + 1 >= liste_carte.length){
+        document.body.removeChild(titre);
         document.body.removeChild(carte);
         document.body.removeChild(suivantBtn);
         carte_fin.textContent = `Score: \n${score}/${liste_carte.length}`;
