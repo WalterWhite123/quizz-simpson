@@ -14,7 +14,18 @@ let ligne = document.querySelector(".ligne");
 const liste_carte = 
 [{src:"img/intro-simpson.webp",question:"Qui est le créateur des simpson ?",reponse:["Justin Roiland","Matt Groening","Seth MacFarlane","Dan Harmon"],bonne_reponse: "Matt Groening"},
 {src:"img/springfield.jpeg",question:"Comment s'appelle la ville des Simpson ?",reponse:["Springfield","Monaco","Los Santos","Spielberg"],bonne_reponse:"Springfield"},
-{src:"img/homer.jpeg",question:"Comment s'appelle le père de la famille ?",reponse:["Homer","Homère","Oh mère !","Moe-Mere"],bonne_reponse:"Homer"}
+{src:"img/homer.jpeg",question:"Comment s'appelle le père de la famille ?",reponse:["Homer","Homère","Oh mère !","Moe-Mere"],bonne_reponse:"Homer"},
+{src:"img/apu.jpg",question:"Comment s'appelle le propriètaire du Kwik-E-Mart?",reponse:["Apu Nahasapeemapetilon","Apu Gopalaswami","Apu Ramanathan","Apu Ramachandran"],bonne_reponse:"Apu Nahasapeemapetilon"},
+{src:"img/mr_burns.jpg", question:"Quel est le nom complet du patron d'Homer ?", reponse:["Montgomery Burns","Charles Montgomery Burns","Montgomery C. Burns","Burns Charles"], bonne_reponse:"Charles Montgomery Burns"},
+{src:"img/ned_flanders.avif", question:"Comment s'appelle le voisin des Simpson ?", reponse:["Ned Flanders","Rod Flanders","Todd Flanders","Cletus Spuckler"], bonne_reponse:"Ned Flanders"},
+{src:"img/milhouse.webp", question:"Comment s'appelle le meilleur ami de Bart ?", reponse:["Nelson Muntz","Milhouse Van Houten","Ralph Wiggum","Martin Prince"], bonne_reponse:"Milhouse Van Houten"},
+{src:"img/lisa.png", question:"Quel instrument joue Lisa Simpson ?", reponse:["Piano","Guitare","Saxophone","Flûte"], bonne_reponse:"Saxophone"},
+{src:"img/snowball.webp", question:"Quel est le nom du chat de la famille Simpson ?", reponse:["Snowball I","Snowball II","Snowball III","Santa’s Little Helper"], bonne_reponse:"Snowball II"},
+{src:"img/santa.webp", question:"Quel est le nom du chien des Simpson ?", reponse:["Santa’s Little Helper","Snowball","Blinky","Stampy"], bonne_reponse:"Santa’s Little Helper"},
+{src:"img/moes.avif", question:"Quel est le nom du bar où Homer passe souvent ses soirées ?", reponse:["The Drunken Clam","Moe’s Tavern","Krusty Burger","Springfield Bar"], bonne_reponse:"Moe’s Tavern"},
+{src:"img/nelson.avif", question:"Quel personnage est souvent présenté comme le harceleur à l’école ?", reponse:["Bart Simpson","Nelson Muntz","Milhouse Van Houten","Ralph Wiggum"], bonne_reponse:"Nelson Muntz"},
+{src:"img/leftorium.avif", question:"Comment s’appelle le magasin spécialisé dans les produits pour gauchers ?", reponse:["Leftorium","Rightorium","Springfield Goods","Flanders Shop"], bonne_reponse:"Leftorium"},
+
 
 ]
 
