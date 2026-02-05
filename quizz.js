@@ -5,7 +5,7 @@ let image = document.querySelector("img");
 let question = document.querySelector("#question")
 let conteneur_reponse = document.querySelector(".conteneur-reponse")
 let reponse = document.querySelectorAll(".reponse");
-
+let ligne = document.querySelector(".ligne");
 
 //liste
 const liste_carte = 
@@ -34,9 +34,22 @@ window.addEventListener("load",(event)=>{
 
 
 suivantBtn.addEventListener("click",()=>{
+
+
+
+
+
     carte_courante++;
     //reinit touched
     touched = false;
+
+
+    if (carte_courante >= liste_carte.length){
+        console.log("Fin");
+    }
+    else{
+
+    
     image.setAttribute("src",liste_carte[carte_courante].src);
     question.textContent = liste_carte[carte_courante].question;
     let i = 0;
@@ -47,6 +60,9 @@ suivantBtn.addEventListener("click",()=>{
     })
     i = 0;
 
+
+    }
+
     
 
     
@@ -54,13 +70,19 @@ suivantBtn.addEventListener("click",()=>{
 
 conteneur_reponse.addEventListener("click",(event)=>{
     
+    if (event.target.className == "reponse"){
+
     if (touched == false){
         if (event.target.textContent == liste_carte[carte_courante].bonne_reponse){
         event.target.style.cssText = "background-color:green;color:white;"
         score++;
         console.log(score);
     }else{
-        event.target.style.cssText = "background-color:red;color:white;"
+        
+        
+
+
+            event.target.style.cssText = "background-color:red;color:white;"
 
         setTimeout(()=>{
 
@@ -72,11 +94,17 @@ conteneur_reponse.addEventListener("click",(event)=>{
 
         },1000);
 
+
         
+
+
+        
+
+    
 
     }
     touched = true;
 
     }
-    
+}
 })
